@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calm Path</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/8a3d976fe3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <link rel="stylesheet"href="style.css"/>
+  <body style="background-color: #9bd212">
+
+<!--Navbar Section-->
+
+    <nav id="navbar">
+      <span id="logo">
+        <img src="images/logo.svg" alt="" />
+      </span>
+      <ul>
+        <li class="item"><a href="#home">HOME <i class="fa fa-home"></i></a></li>
+        <li class="item"><a href="#about">ABOUT <i class="fa fa-group"></i></a></li>
+        <li class="item"><a href="#therapist-matching">THERAPIST MATCHING <i class="fa fa-heart"></i></a></li>
+        <li class="item"><a href="#contact-us">CONTACT US <i class="fa fa-phone"></i></a></li>
+      </ul>
+    </nav>
+
+<!--Home Section-->
+
+    <section id="home">
+      <h1 class="h-primary">HEALING STARTS HERE <i class="fa fa-heartbeat"></i></h1>
+      <p>Your health and healing is our top most priority!</p>
+      <form class="searchbar" action="#">
+                <input id="searchbar"
+                type="text"
+                    placeholder=" Search for Therapist online!"
+                    name="search">
+                <button>
+                    <i class="fa fa-search"
+                        style="font-size: 18px;">
+                    </i>
+                </button>
+            </form>
+      <button
+        type="button"
+        class="btn"
+        onclick="bookAppointment()"
+        style="
+          color: white;
+          font-weight: bolder;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+            sans-serif;
+          font-size: 25px;
+          background-color: #9bd212;
+          border-color: rgba(122, 34, 34, 0.395);
+          border-radius: 15px;
+        "
+      >
+        Book your appointment with our doctors now!
+      </button>     
+    </section>
+
+<!--About Section-->
+
+    <section id="about">
+      <h1 class="h-primary center">ABOUT US</h1>
+      <div class="about1">
+        <h1 class="about-head">MISSION</h1>
+        <p class="about-para">
+          Our mission is to provide Personalized Therapy Services to the user.
+        </p>
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">EXPERTISE</h5>
+                <p class="card-text">
+                  Our professionals typically have undergone extensive training
+                  and education to gain the knowledge and skills necessary to
+                  provide quality care to their patients.
+                </p>
+                <button href="#" class="button">
+                  <span>Click here to read more</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">PATIENT-CENTERED CARE</h5>
+                <p class="card-text">
+                  Our commitment to patient-centered care is paramount. We
+                  strive to put preferences of our patients at the forefront of
+                  everything we do, from the design of our website to the
+                  delivery of our services.
+                </p>
+                <button href="#" class="button">
+                  <span>Click here to read more</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">HIGH QUALITY CARE REMOTELY</h5>
+                <p class="card-text">
+                  We make use of several technology and tools to deliver high
+                  quality services to our patients to give them a wonderful
+                  medical experience.
+                </p>
+                <button href="#" class="button">
+                  <span>Click here to read more</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">VALUES</h5>
+                <p class="card-text">
+                  We respect your value and privcy and are committed to providing inclusive and equitable care
+                  for all.
+                </p>
+                <button href="#" class="button">
+                  <span>Click here to read more</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Therapist Matching section -->
+<section id="therapist-matching">
+  <h1 class="h-primary center">THERAPIST MATCHING</h1>
+  <div class="donate1">
+      <p class="donate-para" style="font-size:50px; padding-top: 30px">Your Therapists Are Here</p>
+      <button type="button" class="button" onclick="donateUs()" style="display:block; margin:20px auto;">
+          <span>Book now</span>
+      </button>
+      <div class="row justify-content-center">
+          <div class="col-3 mb-3 mb-sm-0">
+              <div class="card donate2" style="width: 18rem; height:25rem;">
+                  <img src="image/therapist.jpg" class="card-img-top" alt="Therapist 1" style="height: 70%; object-fit: cover;">
+                  <div class="card-body">
+                      <h5 class="card-title">Dr.Alex Heals</h5>
+                      <button type="button" class="button">
+                          <span>Book here!</span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-3 mb-3 mb-sm-0">
+              <div class="card donate2" style="width: 18rem; height:25rem;">
+                  <img src="image/therapist2.jpg" class="card-img-top" alt="Therapist 2" style="height: 70%; object-fit: cover;">
+                  <div class="card-body">
+                      <h5 class="card-title">Dr.Serena Saw</h5>
+                      <button type="button" class="button"">
+                          <span>Book here!</span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-3 mb-3 mb-sm-0">
+              <div class="card donate2" style="width: 18rem; height:25rem;">
+                  <img src="image/therapist3.jpg" class="card-img-top" alt="Therapist 3" style="height: 70%; object-fit: cover;">
+                  <div class="card-body">
+                      <h5 class="card-title">Dr. Herindra Sharma</h5>
+                      <button type="button" class="button">
+                          <span>Book here!</span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <p class="donate-para" style="font-size:30px; padding-top: 30px">Smile is The Best Therapy</p>
+      <p class="donate-para" style="font-size:15px; padding-bottom: 20px">If you’d prefer to council online, Please contract us. </p>
+  </div>
+</section>
+
+    
+
+<!-- Contact Us Section -->
+<section id="contact-us">
+  <h1 class="h-primary center">CONTACT US</h1>
+  <div id="contact-box">
+      <form id="contactForm">
+          <div class="form-group">
+              <label for="name">Name: </label>
+              <input type="text" name="name" id="name" placeholder="Please enter your name" required />
+          </div>
+          <div class="form-group">
+              <label for="email">Email Address: </label>
+              <input type="email" name="email" id="email" placeholder="Please enter your email address" required />
+          </div>
+          <div class="form-group">
+              <label for="phone">Phone Number: </label>
+              <input type="text" name="phone" id="phone" placeholder="Please enter your phone number" maxlength="10" required />
+          </div>
+          <div class="form-group">
+              <label for="message">Send us a message: </label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Type here..." required></textarea>
+          </div>
+          <button type="submit" class="submit">Submit</button>
+      </form>
+  </div>
+</section>
+
+<script>
+  // JavaScript to handle form submission
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Redirect to thank you page
+      window.location.href = 'thankyou.html';
+  });
+</script>
+
+</body>
+</html>
+
+
+<!--Footer Section-->
+
+  </section>
+    <footer>
+      <!--Social media icon section-->
+        <div class="footer-social">
+      <a href="https://github.com" class="generic-anchor" target="_blank" title="Github" itemprop="significantLink"><i class="fa fa-github"></i></a>
+      <a href="https://www.facebook.com/" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+      <a href="#contact-us" class="generic-anchor" target="_blank" title="Website" itemprop="significantLink"><i class="fa fa-google"></i></a>
+      🙋‍♀️Let's Talk!>>
+      <a href="@gmail.com" class="generic-anchor" target="_blank" title="Gmail" itemprop="significantLink"><i class="fa fa-envelope"></i></a>
+      <a href="https://www.linkedin.com" class="generic-anchor" target="_blank" title="LinkedIn" itemprop="significantLink"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+        </div>
+      <!--Copyright section-->
+      <div class="center footer">
+        &copy; 2024 Copyright:  All rights reserved! 
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
+
